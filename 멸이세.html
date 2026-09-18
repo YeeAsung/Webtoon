@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추천 웹툰 — 멸망 이후의 세계</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen py-10 px-4">
+
+  <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8">
+
+    <nav class="mb-6">
+      <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">← 목록으로 돌아가기</a>
+    </nav>
+
+    <!-- ① 제목과 한 줄 소개 -->
+    <header class="flex items-center gap-4 mb-6">
+      <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl shadow-inner flex-shrink-0">🌌</div>
+      <div>
+        <h1 class="text-2xl font-black text-slate-900 tracking-tight">멸망 이후의 세계</h1>
+        <p class="text-sm text-slate-500 mt-1">모두가 과거로 돌아갈 때, 마지막까지 회귀하지 않았던 사나이의 이야기</p>
+      </div>
+    </header>
+
+    <!-- 썸네일 이미지 영역 -->
+        <div class="px-6 py-6 sm:px-10 border-b border-slate-50">
+  <!-- w-full, aspect-video를 지우고 w-fit(이미지 크기에 맞춤)과 mx-auto(가운데 정렬) 추가 -->
+  <div class="relative w-fit max-w-full mx-auto rounded-2xl overflow-hidden shadow-md group">
+    <!-- w-full h-full object-cover를 지우고 max-w-full h-auto 적용 (원본 크기 유지 및 반응형) -->
+    <img 
+      src="https://i.postimg.cc/W3RnLyZT/myeol-ise.png" 
+      alt="웹툰 썸네일" 
+      class="max-w-full h-auto transition-transform duration-700 group-hover:scale-105" 
+      onerror="this.src='https://placehold.co/800x450/e0e7ff/4338ca?text=Image+Not+Found'"
+    >
+  </div>
+</div>
+
+    <!-- ② 어떤 웹툰인가 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+        어떤 웹툰인가요?
+      </h2>
+      <p class="text-sm leading-relaxed text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+        《전지적 독자 시점》의 원작자인 싱숑 작가의 동명 소설을 웹툰화한 작품입니다. 탑이 붕괴하고 세상이 멸망하는 순간, 남들은 전부 과거로 회귀해버렸지만 홀로 남아 끝까지 탑을 오르기로 결심한 주인공의 광활하고 독창적인 아포칼립스 판타지 세계관을 보여줍니다.
+      </p>
+    </section>
+
+    <!-- ③ 이럴 때 좋아요 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+        이럴 때 추천해요!
+      </h2>
+      <ul class="space-y-2 text-sm text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>《전독시》 세계관 특유의 깊이 있고 거대한 판타지를 좋아할 때</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>진부한 회귀물에서 벗어난 독특하고 신선한 설정에 매료되고 싶을 때</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>압도적인 스케일과 세련된 연출의 액션 판타지를 즐기고 싶을 때</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ④ 원래 사이트로 이동하는 링크 --> 
+    <a class="block w-full text-center py-4 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-2xl shadow-lg shadow-indigo-500/20 hover:from-indigo-500 hover:to-purple-500 transition-all transform hover:-translate-y-0.5" href="https://comic.naver.com/webtoon/list?titleId=789979" target="_blank" rel="noopener">
+      네이버 웹툰에서 보러 가기 →
+    </a>
+    <p class="text-center text-xs text-slate-400 mt-2">새 탭에서 네이버 웹툰 페이지가 열립니다.</p>
+
+    <!-- ⑤ 추천한 사람 -->
+    <footer class="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-400 font-medium">
+      추천 · 웹툰 큐레이터
+    </footer>
+
+  </div>
+
+</body>
+</html>
