@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추천 웹툰 — 김부장</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen py-10 px-4">
+
+  <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8">
+
+    <nav class="mb-6">
+      <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">← 목록으로 돌아가기</a>
+    </nav>
+
+    <!-- ① 제목과 한 줄 소개 -->
+    <header class="flex items-center gap-4 mb-6">
+      <div class="w-16 h-16 rounded-2xl bg-slate-200 flex items-center justify-center text-3xl shadow-inner flex-shrink-0">🕶️</div>
+      <div>
+        <h1 class="text-2xl font-black text-slate-900 tracking-tight">김부장</h1>
+        <p class="text-sm text-slate-500 mt-1">딸을 찾기 위해 국가를 상대로 나선 전직 비밀요원의 처절한 액션</p>
+      </div>
+    </header>
+
+    <!-- 썸네일 이미지 영역 -->
+        <div class="px-6 py-6 sm:px-10 border-b border-slate-50">
+  <!-- w-full, aspect-video를 지우고 w-fit(이미지 크기에 맞춤)과 mx-auto(가운데 정렬) 추가 -->
+  <div class="relative w-fit max-w-full mx-auto rounded-2xl overflow-hidden shadow-md group">
+    <!-- w-full h-full object-cover를 지우고 max-w-full h-auto 적용 (원본 크기 유지 및 반응형) -->
+    <img 
+      src="https://i.postimg.cc/MZFCM61T/gimbujang.png"
+      alt="웹툰 썸네일" 
+      class="max-w-full h-auto transition-transform duration-700 group-hover:scale-105" 
+      onerror="this.src='https://placehold.co/800x450/e0e7ff/4338ca?text=Image+Not+Found'"
+    >
+  </div>
+</div>
+
+    <!-- ② 어떤 웹툰인가 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+        어떤 웹툰인가요?
+      </h2>
+      <p class="text-sm leading-relaxed text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+        《외모지상주의》, 《싸움독학》 등의 세계관을 잇는 공식 스핀오프 작품입니다. 오직 딸 '민지'를 위해 특수요원직을 관두고 평범함을 선택했던 가장 김부장이, 소리소문 없이 사라진 딸을 찾기 위해 대한민국 거대 세력에 맞서는 박진감 넘치는 느와르 액션입니다.
+      </p>
+    </section>
+
+    <!-- ③ 이럴 때 좋아요 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+        이럴 때 추천해요!
+      </h2>
+      <ul class="space-y-2 text-sm text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>박태준 유니버스 특유의 화끈하고 묵직한 액션을 좋아할 때</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>안경 쓴 평범한 아저씨의 숨겨진 압도적인 전투력을 구경하고 싶을 때</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>한시도 눈을 뗄 수 없는 긴장감 넘치는 첩보·느와르 스토리를 원할 때</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ④ 원래 사이트로 이동하는 링크 --> 
+    <a class="block w-full text-center py-4 px-6 bg-gradient-to-r from-slate-800 to-slate-900 text-white font-bold rounded-2xl shadow-lg shadow-slate-900/20 hover:from-slate-700 hover:to-slate-800 transition-all transform hover:-translate-y-0.5" href="https://comic.naver.com/webtoon/list?titleId=783052" target="_blank" rel="noopener">
+      네이버 웹툰에서 보러 가기 →
+    </a>
+    <p class="text-center text-xs text-slate-400 mt-2">새 탭에서 네이버 웹툰 페이지가 열립니다.</p>
+
+    <!-- ⑤ 추천한 사람 -->
+    <footer class="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-400 font-medium">
+      추천 · 김민
+    </footer>
+
+  </div>
+
+</body>
+</html>
