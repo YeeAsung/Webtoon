@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추천 웹툰 — 괴력난신</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen py-10 px-4">
+
+  <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 p-6 md:p-8">
+
+    <nav class="mb-6">
+      <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">← 목록으로 돌아가기</a>
+    </nav>
+
+    <!-- ① 제목과 한 줄 소개 -->
+    <header class="flex items-center gap-4 mb-6">
+      <div class="w-16 h-16 rounded-2xl bg-rose-100 flex items-center justify-center text-3xl shadow-inner flex-shrink-0">🩸</div>
+      <div>
+        <h1 class="text-2xl font-black text-slate-900 tracking-tight">괴력난신</h1>
+        <p class="text-sm text-slate-500 mt-1">살인을 즐기던 연쇄살인마, 명문 가문의 셋째 공자로 위장하다</p>
+      </div>
+    </header>
+
+    <!-- 썸네일 이미지 영역 -->
+        <div class="px-6 py-6 sm:px-10 border-b border-slate-50">
+  <!-- w-full, aspect-video를 지우고 w-fit(이미지 크기에 맞춤)과 mx-auto(가운데 정렬) 추가 -->
+  <div class="relative w-fit max-w-full mx-auto rounded-2xl overflow-hidden shadow-md group">
+    <!-- w-full h-full object-cover를 지우고 max-w-full h-auto 적용 (원본 크기 유지 및 반응형) -->
+    <img 
+      src="https://i.postimg.cc/fWqVV9HL/goelyeognansin.png" 
+      alt="웹툰 썸네일" 
+      class="max-w-full h-auto transition-transform duration-700 group-hover:scale-105" 
+      onerror="this.src='https://placehold.co/800x450/e0e7ff/4338ca?text=Image+Not+Found'"
+    >
+  </div>
+</div>
+
+    <!-- ② 어떤 웹툰인가 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+        어떤 웹툰인가요?
+      </h2>
+      <p class="text-sm leading-relaxed text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+        《나노마신》, 《화산귀환》 등의 세계관을 잇는 한중월야 작가의 원작을 바탕으로 한 무협 오컬트 웹툰입니다. 살인에서 즐거움을 느끼는 '겸살귀' 정이 자신과 똑같이 생긴 대 연목검장의 셋째 공자 '목경운'의 대역이 되어 진짜 가문의 후계자로서 살아남기 위해 벌이는 숨 막히는 심리·액션극입니다.
+      </p>
+    </section>
+
+    <!-- ③ 이럴 때 좋아요 -->
+    <section class="mb-8">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+        이럴 때 추천해요!
+      </h2>
+      <ul class="space-y-2 text-sm text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>선과 악의 경계를 아슬아슬하게 넘나드는 입체적인 주인공을 원할 때</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>정통 무협에 기괴하고 어두운 오컬트 분위기가 섞인 독특한 감성을 찾을 때</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-600 font-bold">✓</span>
+          <span>한중월야 작가 특유의 몰입감 높은 무협 세계관을 재미있게 읽을 때</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ④ 원래 사이트로 이동하는 링크 --> 
+    <a class="block w-full text-center py-4 px-6 bg-gradient-to-r from-rose-600 to-red-700 text-white font-bold rounded-2xl shadow-lg shadow-red-500/20 hover:from-rose-500 hover:to-red-600 transition-all transform hover:-translate-y-0.5" href="https://comic.naver.com/webtoon/list?titleId=821597" target="_blank" rel="noopener">
+      네이버 웹툰에서 보러 가기 →
+    </a>
+    <p class="text-center text-xs text-slate-400 mt-2">새 탭에서 네이버 웹툰 페이지가 열립니다.</p>
+
+    <!-- ⑤ 추천한 사람 -->
+    <footer class="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-400 font-medium">
+      추천 · 웹툰 큐레이터
+    </footer>
+
+  </div>
+
+</body>
+</html>
